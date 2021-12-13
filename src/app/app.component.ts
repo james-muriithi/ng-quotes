@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Quote } from 'src/shared/quote.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-quotes';
+
+  quotes: Quote[] = [];
+
+  
+
 }
