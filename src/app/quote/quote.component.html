@@ -1,0 +1,22 @@
+<div class="inner inner-one">
+    <div class="box">
+        <div class="text">
+            <i class="start-quote fa fa-quote-left"></i>
+            <p class="quote">{{quote.quote}}</p>
+            <p class="credit">{{quote.author}}</p>
+        </div>
+
+        <div class="pt-4">
+            <button class="like btn" (click)="likeQuote()">
+                <i class="fa fa-thumbs-up"></i> {{quote.likes}}
+            </button>
+            <button class="dislike btn" (click)="dislikeQuote()">
+                <i class="fa fa-thumbs-down"></i> {{quote.dislikes}}
+            </button>
+            <button class="btn delete float-end" (click)="deleteQuote()">
+                <div class="fa fa-trash text-danger"></div>
+            </button>
+        </div>
+
+    </div>
+</div>
