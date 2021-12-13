@@ -11,14 +11,16 @@ export class AppComponent {
 
   quotes: Quote[] = [
     new Quote(
-      this.generateRandomId(),
+      Quote.generateRandomId(),
       "Anthony J. D'Angelo",
       'Develop a passion for learning. If you do, you will never cease to grow.',
       new Date()
     ),
   ];
 
-  generateRandomId() {
-    return Math.floor(Math.random() * 100);
+
+  addQuote(quote: Quote){
+    this.quotes.unshift(quote);
   }
+
 }

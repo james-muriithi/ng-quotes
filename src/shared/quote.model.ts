@@ -6,7 +6,9 @@ export class Quote {
     public createdAt: Date,
     public likes: number = 0,
     public dislikes: number = 0
-  ) {
+  ) {}
 
+  static generateRandomId() {
+    return Math.floor(Math.random() * 100);
   }
 }
