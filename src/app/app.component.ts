@@ -14,7 +14,7 @@ export class AppComponent {
       Quote.generateRandomId(),
       "Anthony J. D'Angelo",
       'Develop a passion for learning. If you do, you will never cease to grow.',
-      new Date()
+      new Date("2021-12-15T13:10:00")
     ),
   ];
 

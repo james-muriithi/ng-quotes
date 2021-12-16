@@ -16,12 +16,17 @@
     width: 100%;
 }
 
+.date,
 .credit {
     font-family: "josefin sans", sans serif;
     font-size: 0.9rem;
     font-weight: 500;
     text-align: right;
     margin-top: 1rem;
+}
+
+.date {
+    text-align: left;
 }
 
 .quote {
